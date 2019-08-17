@@ -1,0 +1,58 @@
+.table-responsive {
+  width: 500px;
+}
+body {
+  background: #631994;
+}
+.jumbotron {
+  font-family: "Righteous";
+  font-size: 20px;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  color: aliceblue;
+  font-size: 50px;
+}
+
+.product {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 8px;
+}
+
+img {
+  width: 200px;
+  height: 170px;
+}
+
+.desc {
+  padding: 30px;
+}
+.price {
+  padding: 50px;
+}
+
+.products {
+  margin: 14px;
+}
+.title3 {
+  padding-left: 80px;
+  padding-bottom: 20px;
+}
+.title1 {
+  padding-left: 130px;
+  padding-bottom: 20px;
+}
+
+.title2 {
+  padding-left: 250px;
+  padding-bottom: 20px;
+}
+.ourLocation {
+  font-family: "Righteous";
+  font-size: 20px;
+  color: white;
+}

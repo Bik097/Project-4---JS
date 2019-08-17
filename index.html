@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1" />
+    <title>Lab 2 | COMP1073 Client-Side JavaScript</title>
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px; /* The height is 400 pixels */
+        width: 100%; /* The width is the width of the web page */
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weird Deals</h1>
+      <br />
+      <div class="jumbotron">
+        <h2>
+          Weird Deals offers customers the opportunity to get great deals on
+          really weird products. Just Sign-up to get the WEIRDLY AMAZING DEALS!
+        </h2>
+        <br /><br />
+        <div>
+          <p><a href="#map">Go to the Map</a></p>
+        </div>
+        <br />
+        <h2 class="login">LOGIN</h2>
+        <br />
+        <div class="table-responsive">
+          <form action="deals.html" method="post" novalidate>
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Enter name here"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Enter email here"
+                      id="email"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Age</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="age"
+                      class="form-control"
+                      placeholder="Enter age here"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Location</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="location"
+                      class="form-control"
+                      placeholder="Enter location here"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="error" aria-live="polite"></span>
+            <input type="submit" value="Submit" name="submit" id="submit" />
+          </form>
+        </div>
+      </div>
+      <p class="ourLocation">Our location:</p>
+      <div id="map"></div>
+      <br /><br />
+      <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = { lat: 44.389339, lng: -79.685516 };
+          // The map, centered at Uluru
+          var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru
+          });
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({ position: uluru, map: map });
+        }
+      </script>
+      <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC_Q8lgB0AZIhE2khIVBU8H95F_47-qdo&callback=initMap"
+      ></script>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

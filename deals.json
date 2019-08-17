@@ -1,0 +1,24 @@
+[
+  {
+    "name": "hat",
+    "price": "$15",
+    "desc": "Finally, you can indulge in everyone’s life-long desire of wearing pizza atop their head. Beware the sprinkled parmesan as you nod or shake your head, though—some might mistake it for dandruff.",
+    "features": "Cool hat, protects you from the sun",
+    "link": "https://i0.wp.com/bestlifeonline.com/wp-content/uploads/2018/08/nicolas-cage-pillow.jpg?resize=600%2C600&ssl=1"
+  },
+  {
+    "name": "pillow",
+    "price": "$20",
+    "desc": "Nicolas Cage's face pillow or Nicolas Cage's face on a pillow.",
+    "features": "Softest pillow in the game",
+    "link": "https://i1.wp.com/bestlifeonline.com/wp-content/uploads/2018/08/5139OFKq8HL.jpg?w=1200&ssl=1"
+  },
+
+  {
+    "name": "ladybug",
+    "price": "$40",
+    "desc": "Who says you can’t buy anything for under $10 anymore? In fact, Amazon shoppers can buy 1,500 crawling, flying somethings for the bargain price of a latte.",
+    "features": "Now that's a lot of ladybugs",
+    "link": "https://i0.wp.com/bestlifeonline.com/wp-content/uploads/2018/08/live-ladybugs.jpg?w=1024&ssl=1"
+  }
+]
